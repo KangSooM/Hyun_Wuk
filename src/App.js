@@ -8,12 +8,14 @@ import NotFound from "./pages/NotFound";
 import Web from "./pages/Web";
 import WebPost from "./pages/WebPost";
 import ProfileSub1 from "./pages/ProfileSub1";
-
+import Links from "./pages/Link";
+import NavLink from "./pages/NavLink";
 
 function App() {
   return (
     <BrowserRouter>
-    <a href="/">-Home-</a>
+      <Links/>
+      <NavLink/>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/About" element={<About></About>}></Route>
